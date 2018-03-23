@@ -212,9 +212,13 @@ nav ul li a:hover {
   font-size: 22px;
   margin-top: 0;
 }
-.text-section p {
+.text-section p,.text-section ol,.text-section ul{
   font-size: 18px;
   letter-spacing: 1px;
+}
+.text-section div{
+  float:left;
+  width: 50%;
 }
 .text-section>* {
   max-width: 90%;
