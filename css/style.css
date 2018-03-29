@@ -3,7 +3,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: STKaiti ,华文楷体;
+  font-family: 'Times New Roman',STKaiti ,华文楷体;
 }
 h1 {
   padding: 12px;
@@ -14,7 +14,7 @@ h2 {
   font-size: 20px;
 }
 h3 {
-  font-size: 14px;
+  font-size: 16px;
 }
 p {
   font-size: 18px;
@@ -61,6 +61,7 @@ nav ul {
 nav ul li, nav .logo {
   display: inline-block;
   line-height: 50px;
+  margin-right: 20px;
 }
 nav ul li a {
   line-height: 50px;
@@ -74,7 +75,7 @@ nav ul li a {
   border-bottom: 3px solid #fff;
 }
 nav ul li a:hover {
-  border-bottom: 3px solid #fff;
+  color: #ddd;
 }
 #banner {
   height: 700px;
@@ -87,35 +88,46 @@ nav ul li a:hover {
   top: 160px;
   color: #eee;
 }
-#banner a {
+#banner .cv {
   border: none;
   background-color: #111;
+  font-size: 18px;
   text-decoration: none;
   color: #ddd;
-  padding: 10px;
   position: relative;
-  top: 130px;
-}
-#banner a {
-  padding: 15px 40px;
+  top: 30px;
+  padding: 10px 30px;
   cursor: pointer;
   transition: all .5s ease;
 }
-#banner a:hover {
+#banner .cv:hover {
   background: #ddd;
   color: #111
 }
+#banner .inner .more{
+  margin-top: 100px;
+}
+#banner div .more a {
+  text-decoration: none;
+  color: #fff;
+}
+#banner div .more a:hover {
+  text-decoration: unde rline;
+  color: #ddd;
+}
 .sub-heading {
   line-height: 30px;
-  margin: 30px 0;
+  margin: 20px 0;
+  font-size: 20px;
 }
 .logo {
   font-size: 20px;
+
   font-weight: 700;
   letter-spacing: 1px;
   margin-left: 20px;
 }
-.logo a, h1, #banner {
+.logo, h1, #banner {
   color: #fff;
   text-decoration: none;
 }
@@ -123,7 +135,7 @@ nav ul li a:hover {
 /*主题样式一*/
 
 .green-section {
-  background-color: rgba(8, 157, 176, 0.8);
+  background-color: rgba(79, 101, 123, 0.8);
   color: #fff;
   text-align: center;
   padding: 100px 0;
@@ -133,14 +145,14 @@ nav ul li a:hover {
   margin: 0 auto;
 }
 .green-section .hr {
-  background-color: #078494;
+  background-color: #bbbaba;
   width: 60%;
 }
 .green-section .icon-group .icon {
   display: inline-block;
   width: 120px;
   height: 120px;
-  background: #0D6F7C;
+  background: #3b4d5d;
   transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
@@ -166,8 +178,10 @@ nav ul li a:hover {
   margin: 60px;
 }
 
+/*主题样式二*/
+
 .gray-section {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
   font-size: 0;
 }
@@ -222,18 +236,18 @@ nav ul li a:hover {
   max-width: 90%;
 }
 
-/*主题样式二*/
+/*主题样式三*/
 
 .purple-section {
   padding: 80px;
-  background-color: rgba(33, 28, 26, 0.44);
+  background-color: rgba(55,50,89,0.8);
   color: #ffffff;
 }
 .purple-section .heading-wrapper {
   text-align: center;
 }
 .purple-section .hr {
-  background: #373259;
+  background: #ddd;
   width: 60%;
 }
 .card-group:after {
@@ -251,10 +265,10 @@ nav ul li a:hover {
   box-sizing: border-box;
 }
 .card:first-child {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
 }
 .card:nth-child(2) {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
 }
 .card:nth-child(3) {
   background: rgba(0, 0, 0, 0.2);
@@ -303,6 +317,7 @@ ul .share-group {
   color: #fff;
 }
 .share-group li a:hover {
+  color:#ddd;
   text-decoration: underline;
 }
 .copy {
