@@ -3,6 +3,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  font-family: STKaiti ,华文楷体;
 }
 h1 {
   padding: 12px;
@@ -88,31 +89,21 @@ nav ul li a:hover {
 }
 #banner a {
   border: none;
-  background-color: #333;
+  background-color: #111;
   text-decoration: none;
-  color: #eee;
+  color: #ddd;
   padding: 10px;
   position: relative;
   top: 130px;
 }
 #banner a {
-  padding: 14px 60px;
+  padding: 15px 40px;
   cursor: pointer;
   transition: all .5s ease;
 }
 #banner a:hover {
-  background: #675353;
-}
-#banner .inner .more {
-  position: relative;
-  top: 220px;
-}
-.more a {
-  text-decoration: none;
-  color: #fff;
-}
-.more a:hover {
-  text-decoration: underline;
+  background: #ddd;
+  color: #111
 }
 .sub-heading {
   line-height: 30px;
@@ -147,20 +138,20 @@ nav ul li a:hover {
 }
 .green-section .icon-group .icon {
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   background: #0D6F7C;
   transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
-  margin: 20px 40px;
+  margin: 40px 40px;
 }
 .icon-group .icon a {
   display: inline-block;
   width: 140px;
-  margin-top: 38px;
-  margin-left: -22px;
+  margin-top: 51px;
+  margin-left: -10px;
   text-decoration: none;
   color: #fff;
   transform: rotate(-45deg);
@@ -169,7 +160,7 @@ nav ul li a:hover {
   -ms-transform: rotate(-45deg);
 }
 .icon-group .icon a:hover {
-  color: #030527;
+  color: #111;
 }
 .icon-group {
   margin: 60px;
@@ -194,6 +185,9 @@ nav ul li a:hover {
   text-decoration: none;
   font-size: 20px;
 }
+.text-section h2 a:hover {
+  color: #ddd;
+}
 .article-preview>div {
   float: left;
 }
@@ -216,9 +210,13 @@ nav ul li a:hover {
   font-size: 18px;
   letter-spacing: 1px;
 }
-.text-section div{
+.col-50 div{
   float:left;
   width: 50%;
+}
+.col-30 div{
+  float:left;
+  width: 30%;
 }
 .text-section>* {
   max-width: 90%;
@@ -270,6 +268,20 @@ nav ul li a:hover {
 .card:nth-child(6) {
   background: rgba(0, 0, 0, 0.2);
 }
+.purple-section .more {
+  position: relative;
+  top:20px;
+  text-align: center;
+}
+.purple-section .more a {
+  text-decoration: none;
+  color: #fff;
+}
+.purple-section .more a:hover {
+  text-decoration: underline;
+  color: #ddd;
+}
+
 footer {
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
