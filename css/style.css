@@ -1,32 +1,13 @@
 /*公共样式*/
-
-html, body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Times New Roman',STKaiti ,华文楷体;
-}
 h1 {
   padding: 12px;
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
 }
-h2 {
-  font-size: 20px;
-}
-h3 {
-  font-size: 16px;
-}
-p {
-  font-size: 18px;
-  letter-spacing: 1px;
-}
 .hr {
   height: 2px;
   width: 100px;
   margin: 20px auto;
-}
-ul {
-  margin: 0;
 }
 .clearfix:after {
   content: '';
@@ -48,34 +29,10 @@ ul {
 }
 header {
   background: rgba(0, 0, 0, 0.4);
-}
-nav {
-  height: 50px;
-  line-height: 50px;
-}
-nav ul {
-  list-style: none;
-  margin: 0;
-  float: right;
-}
-nav ul li, nav .logo {
-  display: inline-block;
-  line-height: 50px;
-  margin-right: 20px;
+  margin-top: -20px;
 }
 nav ul li a {
-  line-height: 50px;
-  text-decoration: none;
-  height: inherit;
-  margin-right: 40px;
-  padding-bottom: 5px;
   color: #eee
-}
-.active {
-  border-bottom: 3px solid #fff;
-}
-nav ul li a:hover {
-  color: #ddd;
 }
 #banner {
   height: 700px;
@@ -183,57 +140,23 @@ nav ul li a:hover {
 .gray-section {
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
-  font-size: 0;
 }
 .gray-section .img-section {
-  width: 45%;
+  padding: 0;
 }
-.img-section img {
-  width: 100%;
-}
-.gray-section .text-section {
-  width: 55%;
-}
-.text-section h2 a {
+.text-section h3 a {
   color: #fff;
-  text-decoration: none;
-  font-size: 20px;
 }
-.text-section h2 a:hover {
+.text-section h3 a:hover {
   color: #ddd;
-}
-.article-preview>div {
-  float: left;
+  text-decoration: none;
 }
 .article-preview:nth-child(odd) {
   background-color: rgba(255, 255, 255, 0.2);
 }
-.text-section {
-  position: relative;
-  top: 68px;
-  left: 50px;
-}
-.text-section h2 {
-  margin-bottom: 20px;
-}
-.text-section .sub-heading {
-  font-size: 22px;
-  margin-top: 0;
-}
 .text-section p,.text-section ol,.text-section ul{
   font-size: 18px;
   letter-spacing: 1px;
-}
-.col-50 div{
-  float:left;
-  width: 50%;
-}
-.col-30 div{
-  float:left;
-  width: 30%;
-}
-.text-section>* {
-  max-width: 90%;
 }
 
 /*主题样式三*/
@@ -297,31 +220,29 @@ nav ul li a:hover {
 }
 
 footer {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.95);
   color: #fff;
-  min-height: 100px;
+  min-height: 80px;
   text-align: center;
 }
 ul .share-group {
   display: block;
-  width: 1080px;
+  width: 100%;
   margin: 0 auto;
-  padding: 120px;
+  padding: 100px;
 }
 .share-group li {
   display: inline-block;
-  padding: 25px 20px;
+  padding: 25px 20px 0px;
 }
 .share-group li a {
-  text-decoration: none;
   color: #fff;
 }
 .share-group li a:hover {
   color:#ddd;
-  text-decoration: underline;
 }
 .copy {
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 .copy p {
   font-size: 14px;

@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>lorogy</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <div class="main-wrapper">
       <!--头部信息-->
       <header>
-
-        <nav>
-          <div class="logo">LOROGY</div>
-          <ul>
-            <li>
-              <a href="#" class="active">HOME</a>
-            </li>
-            <li>
-              <a href="#">CASE</a>
-            </li>
-            <li>
-              <a href="#">IFE</a>
-            </li>
-            <li id="slidebar_trigger">
-              <a href="#">MORE</a>
-            </li>
-          </ul>
+        <nav class="navbar navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">HOME</a></li>
+                <li><a href="#">CASE</a></li>
+              </ul>
+          </div>
         </nav>
         <div id="banner">
           <div class="inner">
@@ -43,7 +47,7 @@
         <section class="green-section">
           <div class="wrapper">
             <div>
-              <h2>some cases</h2>
+              <h3>some cases</h3>
               <div class="hr"></div>
               <p class="sub-heading"> just do it </p>
             </div>
@@ -55,78 +59,82 @@
             </div>
           </div>
         </section>
-        <section class="gray-section">
-          <div class="article-preview clearfix">
-            <div class="img-section">
-              <img src="imgs/lorogymall/6.png" alt="" />
+        <section class="gray-section container-fluid">
+          <div class="article-preview row clearfix">
+            <div class="img-section col-md-5">
+              <img class="img-responsive" src="imgs/lorogymall/6.png" alt="" />
             </div>
-            <div class="text-section col-50">
-              <h2><a href="https://github.com/Lorogy/lorogyMall.git">lorogyMall(简易全栈商城系统)</a></h2>
-              <div>
-                <p>前端页面</p>
-                <ul>
-                  <li>商品列表页面</li>
-                  <li>购物车列表页面</li>
-                  <li>地址页面</li>
-                  <li>订单确认页面</li>
-                  <li>订单成功页面</li>
-                </ul>
-              </div>
-              <div>
-                <p>技术栈</p>
-                <ul>
-                  <li>前端：Vue全家桶、ES6</li>
-                  <li>后端：Nodejs、Express</li>
-                  <li>数据库：MongoDB</li>
-                </ul>
+            <div class="text-section col-md-7">
+              <h3><a href="https://github.com/Lorogy/lorogyMall.git">lorogyMall(简易全栈商城系统)</a></h3>
+              <div class="row">
+                <div class="col-md-6">
+                  <p>前端页面</p>
+                  <ul>
+                    <li>商品列表页面</li>
+                    <li>购物车列表页面</li>
+                    <li>地址页面</li>
+                    <li>订单确认页面</li>
+                    <li>订单成功页面</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <p>技术栈</p>
+                  <ul>
+                    <li>前端：Vue全家桶、ES6</li>
+                    <li>后端：Nodejs、Express</li>
+                    <li>数据库：MongoDB</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class="article-preview clearfix">
-            <div class="text-section col-30">
-              <h2><a href="https://github.com/Lorogy/film-website-demo.git">film-website-demo(简易电影网站项目)</a></h2>
-              <div>
-                <p>前端</p>
-                <ul>
-                  <li>主页</li>
-                  <li>详情页</li>
-                  <li>注册页</li>
-                  <li>登录页</li>
-                  <li>站内查询页</li>
-                </ul>
-              </div>
-              <div>
-                <p>后端</p>
-                <ul>
-                  <li>用户列表</li>
-                  <li>电影列表</li>
-                  <li>分类列表</li>
-                  <li>后台录入</li>
-                  <li>后台更新</li>
-                  <li>新增分类</li>
-                </ul>
-              </div>
-              <div>
-                <p>技术栈</p>
-                <ul>
-                  <li>框架：Nodejs+Express</li>
-                  <li>数据库：MongoDB</li>
-                  <li>模板引擎：jade</li>
-                  <li>工具库：jquery+bootstrap</li>
-                  <li>自动化：grunt+bower</li>
-                </ul>
+          <div class="article-preview row clearfix">
+            <div class="text-section col-md-7">
+              <h3><a href="https://github.com/Lorogy/film-website-demo.git">film-website-demo(简易电影网站项目)</a></h3>
+              <div class="row">
+                <div class="col-md-4">
+                  <p>前端</p>
+                  <ul>
+                    <li>主页</li>
+                    <li>详情页</li>
+                    <li>注册页</li>
+                    <li>登录页</li>
+                    <li>站内查询页</li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <p>后端</p>
+                  <ul>
+                    <li>用户列表</li>
+                    <li>电影列表</li>
+                    <li>分类列表</li>
+                    <li>后台录入</li>
+                    <li>后台更新</li>
+                    <li>新增分类</li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <p>技术栈</p>
+                  <ul>
+                    <li>框架：Nodejs+Express</li>
+                    <li>数据库：MongoDB</li>
+                    <li>模板引擎：jade</li>
+                    <li>工具库：jquery+bootstrap</li>
+                    <li>自动化：grunt+bower</li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="img-section">
-              <img src="imgs/2.jpg" alt="" />
+            <div class="img-section col-md-5">
+              <img class="img-responsive" src="imgs/2.jpg" alt="" />
             </div>
           </div>
-          <div class="article-preview clearfix">
-            <div class="img-section">
-              <img src="imgs/3.jpg" alt="" />
+          <div class="article-preview row clearfix">
+            <div class="img-section col-md-5">
+              <img class="img-responsive" src="imgs/3.jpg" alt="" />
             </div>
-            <div class="text-section">
-              <h2><a href="https://github.com/Lorogy/leetCode.git">leetcode</a></h2>
+            <div class="text-section col-md-7">
+              <h3><a href="https://github.com/Lorogy/leetCode.git">leetcode</a></h3>
               <ul>
                 <li>javascript</li>
                 <li>前200道</li>
@@ -135,9 +143,9 @@
               </ul>
             </div>
           </div>
-          <div class="article-preview clearfix">
-            <div class="text-section">
-              <h2><a href="https://github.com/Lorogy/vue-tips.git">vue-tips</a></h2>
+          <div class="article-preview row clearfix">
+            <div class="text-section col-md-7">
+              <h3><a href="https://github.com/Lorogy/vue-tips.git">vue-tips</a></h3>
               <p>
                 使用webpack设计一个用于vue的插件<br><br>功能——tips
               </p>
@@ -147,31 +155,9 @@
                 <li>显示创建日期</li>
             </ol>
             </div>
-            <div class="img-section">
-              <img src="imgs/1.jpg" alt="" />
+            <div class="img-section col-md-5">
+              <img class="img-responsive" src="imgs/1.jpg" alt="" />
             </div>
-          </div>
-        </section>
-        <section class="purple-section">
-          <div class="heading-wrapper">
-            <h2>ife</h2>
-            <div class="hr"></div>
-            <div class="sub-heading">
-              <p>成长日志</p>
-            </div>
-          </div>
-          <div class="card-group">
-            <div class="card">
-              <h3>标题</h3>
-              <p>内容1</p>
-            </div>
-            <div class="card">
-              <h3>标题</h3>
-              <p>内容1</p>
-            </div>
-          </div>
-          <div class="more ">
-            <a href="#">更多&gt;&gt;</a>
           </div>
         </section>
       </div>
@@ -190,5 +176,7 @@
         </div>
       </footer>
     </div>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>
