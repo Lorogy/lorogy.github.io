@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>lorogy</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <!-- Bootstrap -->
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
@@ -16,10 +15,11 @@
     <![endif]-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
+  <body id="home">
     <div class="main-wrapper">
       <!--头部信息-->
       <header>
+        <div class="logo">Lorogy</div>
         <nav class="navbar navbar-fixed-top">
           <div class="container-fluid">
             <div class="navbar-header">
@@ -28,8 +28,18 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#">HOME</a></li>
-                <li><a href="#">CASE</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CASES <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#case">cases</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#lorogymall">lorogymall</a></li>
+                    <li><a href="#leetcode">leetcode-JavaScript</a></li>
+                    <li><a href="#film">film-website-demo</a></li>
+                    <li><a href="#vuetips">vue插件</a></li>
+                  </ul>
+                </li>
               </ul>
           </div>
         </nav>
@@ -38,13 +48,13 @@
             <h1>Web Explorer</h1>
             <p class="sub-heading"> 要有最朴素的生活和最遥远的梦想，即使明天天寒地冻，山高水远，路远马亡。</p>
             <a href="cv.html" class="cv">个人简历</a>
-            <div class="more"><a href="#">更多&gt;&gt;</a></div>
+            <div class="more"><a href="#case">更多&gt;&gt;</a></div>
           </div>
         </div>
       </header>
       <!--主题内容-->
       <div class="content">
-        <section class="green-section">
+        <section class="green-section" id="case">
           <div class="wrapper">
             <div>
               <h3>some cases</h3>
@@ -60,9 +70,78 @@
           </div>
         </section>
         <section class="gray-section container-fluid">
-          <div class="article-preview row clearfix">
+          <div class="article-preview row clearfix" id="lorogymall">
             <div class="img-section col-md-5">
-              <img class="img-responsive" src="imgs/lorogymall/6.png" alt="" />
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2000">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="./imgs/lorogymall/1.png" alt="商品列表">
+                    <div class="carousel-caption">
+                      商品列表
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="./imgs/lorogymall/2.png" alt="注册">
+                    <div class="carousel-caption">
+                      注册
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="./imgs/lorogymall/3.png" alt="登录">
+                    <div class="carousel-caption">
+                      登录
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="./imgs/lorogymall/4.png" alt="加入购物车">
+                    <div class="carousel-caption">
+                      加入购物车
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="./imgs/lorogymall/5.png" alt="购物车">
+                    <div class="carousel-caption">
+                      购物车
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="./imgs/lorogymall/6.png" alt="地址选择">
+                    <div class="carousel-caption">
+                      地址选择
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="./imgs/lorogymall/7.png" alt="订单确认">
+                    <div class="carousel-caption">
+                      订单确认
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="./imgs/lorogymall/8.png" alt="订单成功">
+                    <div class="carousel-caption">
+                      订单成功
+                    </div>
+                  </div>
+                </div>
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
             </div>
             <div class="text-section col-md-7">
               <h3><a href="https://github.com/Lorogy/lorogyMall.git">lorogyMall(简易全栈商城系统)</a></h3>
@@ -88,7 +167,106 @@
               </div>
             </div>
           </div>
-          <div class="article-preview row clearfix">
+          <div class="article-preview row clearfix" id="leetcode">
+            <div class="text-section col-md-7">
+              <h3><a href="https://github.com/Lorogy/leetCode.git">leetcode</a></h3>
+              <ul>
+                <li>javascript</li>
+                <li>前200道</li>
+                <li>easy:已完成</li>
+                <li>medium:进行时</li>
+              </ul>
+            </div>
+            <div class="img-section col-md-5">
+              <img class="img-responsive" src="imgs/2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="article-preview row clearfix" id="film">
+            <div class="img-section col-md-5">
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="1000">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="8"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="9"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="10"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="./imgs/film-website-demo/1.png" alt="film-website-demo">
+                    <div class="carousel-caption">
+                      主页
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="./imgs/film-website-demo/2.png" alt="film-website-demo">
+                    <div class="carousel-caption">
+                      详情页
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="./imgs/film-website-demo/3.png" alt="film-website-demo">
+                    <div class="carousel-caption">
+                      注册页
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="./imgs/film-website-demo/4.png" alt="film-website-demo">
+                    <div class="carousel-caption">
+                      登录页
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="./imgs/film-website-demo/5.png" alt="film-website-demo">
+                    <div class="carousel-caption">
+                      结果页
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="./imgs/film-website-demo/6.png" alt="film-website-demo">
+                    <div class="carousel-caption">
+                      电影录入
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="./imgs/film-website-demo/7.png" alt="film-website-demo">
+                    <div class="carousel-caption">
+                      电影更新
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="./imgs/film-website-demo/8.png" alt="film-website-demo">
+                    <div class="carousel-caption">
+                      电影列表
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="./imgs/film-website-demo/9.png" alt="film-website-demo">
+                    <div class="carousel-caption">
+                      用户列表
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="./imgs/film-website-demo/10.png" alt="film-website-demo">
+                    <div class="carousel-caption">
+                      分类增加
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="./imgs/film-website-demo/11.png" alt="film-website-demo">
+                    <div class="carousel-caption">
+                      分类列表
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="text-section col-md-7">
               <h3><a href="https://github.com/Lorogy/film-website-demo.git">film-website-demo(简易电影网站项目)</a></h3>
               <div class="row">
@@ -125,25 +303,8 @@
                 </div>
               </div>
             </div>
-            <div class="img-section col-md-5">
-              <img class="img-responsive" src="imgs/2.jpg" alt="" />
-            </div>
           </div>
-          <div class="article-preview row clearfix">
-            <div class="img-section col-md-5">
-              <img class="img-responsive" src="imgs/3.jpg" alt="" />
-            </div>
-            <div class="text-section col-md-7">
-              <h3><a href="https://github.com/Lorogy/leetCode.git">leetcode</a></h3>
-              <ul>
-                <li>javascript</li>
-                <li>前200道</li>
-                <li>easy:已完成</li>
-                <li>medium:进行时</li>
-              </ul>
-            </div>
-          </div>
-          <div class="article-preview row clearfix">
+          <div class="article-preview row clearfix" id="vuetips">
             <div class="text-section col-md-7">
               <h3><a href="https://github.com/Lorogy/vue-tips.git">vue-tips</a></h3>
               <p>
@@ -156,7 +317,7 @@
             </ol>
             </div>
             <div class="img-section col-md-5">
-              <img class="img-responsive" src="imgs/1.jpg" alt="" />
+              <img class="img-responsive" src="imgs/3.jpg" alt="" />
             </div>
           </div>
         </section>
@@ -172,7 +333,7 @@
           </li>
         </ul>
         <div class="copy">
-          <p>&copy; LOROGY - 2018 | Email:lorogyhao@gmail.com</p>
+          <p>&copy;&nbsp;LOROGY&nbsp;-&nbsp;2018&nbsp;&nbsp;|&nbsp;&nbsp;Email:lorogyhao@gmail.com</p>
         </div>
       </footer>
     </div>

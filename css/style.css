@@ -9,12 +9,6 @@ h1 {
   width: 100px;
   margin: 20px auto;
 }
-.clearfix:after {
-  content: '';
-  display: block;
-  clear: both;
-  visibility: hidden;
-}
 
 /*头部样式*/
 
@@ -35,7 +29,7 @@ nav ul li a {
   color: #eee
 }
 #banner {
-  height: 700px;
+  height: 720px;
 }
 #banner .inner {
   max-width: 300px;
@@ -79,20 +73,22 @@ nav ul li a {
 }
 .logo {
   font-size: 20px;
-
   font-weight: 700;
   letter-spacing: 1px;
   margin-left: 20px;
-}
-.logo, h1, #banner {
-  color: #fff;
+  padding: 10px;
+  color: rgba(255,255,255,0.8);
   text-decoration: none;
+  float: left;
+}
+nav {
+  float: right;
 }
 
 /*主题样式一*/
 
 .green-section {
-  background-color: rgba(79, 101, 123, 0.8);
+  background-color: rgba(79, 101, 123, 0.95);
   color: #fff;
   text-align: center;
   padding: 100px 0;
@@ -116,11 +112,14 @@ nav ul li a {
   -ms-transform: rotate(45deg);
   margin: 40px 40px;
 }
+.green-section .icon-group span:hover{
+  background: #ddd;
+}
 .icon-group .icon a {
   display: inline-block;
-  width: 140px;
-  margin-top: 51px;
-  margin-left: -10px;
+  width: 100%;
+  height: 100%;
+  line-height: 120px;
   text-decoration: none;
   color: #fff;
   transform: rotate(-45deg);
@@ -129,7 +128,7 @@ nav ul li a {
   -ms-transform: rotate(-45deg);
 }
 .icon-group .icon a:hover {
-  color: #111;
+  color: #3b4d5d;
 }
 .icon-group {
   margin: 60px;
@@ -138,21 +137,25 @@ nav ul li a {
 /*主题样式二*/
 
 .gray-section {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(55,50,89,0.95);
   color: #fff;
 }
 .gray-section .img-section {
   padding: 0;
 }
+.gray-section .img-section img{
+  height: 300px;
+  width: 100%;
+}
 .text-section h3 a {
   color: #fff;
 }
 .text-section h3 a:hover {
-  color: #ddd;
+  color: #111;
   text-decoration: none;
 }
 .article-preview:nth-child(odd) {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.15);
 }
 .text-section p,.text-section ol,.text-section ul{
   font-size: 18px;
@@ -161,7 +164,7 @@ nav ul li a {
 
 /*主题样式三*/
 
-.purple-section {
+/*.purple-section {
   padding: 80px;
   background-color: rgba(55,50,89,0.8);
   color: #ffffff;
@@ -217,11 +220,11 @@ nav ul li a {
 .purple-section .more a:hover {
   text-decoration: underline;
   color: #ddd;
-}
+}*/
 
 footer {
   background-color: rgba(0, 0, 0, 0.95);
-  color: #fff;
+  color: #ccc;
   min-height: 80px;
   text-align: center;
 }
@@ -236,10 +239,10 @@ ul .share-group {
   padding: 25px 20px 0px;
 }
 .share-group li a {
-  color: #fff;
+  color: #ccc;
 }
 .share-group li a:hover {
-  color:#ddd;
+  color:#fff;
 }
 .copy {
   padding-bottom: 15px;
